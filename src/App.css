@@ -1,0 +1,225 @@
+* {
+  background-color: black;
+  transition: all 0.3s;
+}
+.logo {
+  width: 100px;
+  cursor: pointer;
+}
+.menu title {
+  color: #fff;
+}
+.home {
+  color: #fff;
+}
+body {
+  overflow-x: hidden;
+}
+.menu {
+  width: 500px;
+  display: flex;
+  gap: 10px;
+}
+.list {
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #03989e;
+
+  border-radius: 15px;
+  font-size: 20px;
+  list-style: none;
+  text-decoration: none;
+  color: #03989e;
+}
+h2 {
+  color: #fff;
+}
+.my-photo {
+  width: 100px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button {
+  color: #03989e;
+  font-size: 40px;
+}
+.headerMenu {
+  backdrop-filter: blur(15px);
+
+  display: flex;
+  gap: 3px;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 150px;
+  height: 30vh;
+  background-color: rgba(204, 204, 204, 0.084);
+}
+
+@media only screen and (max-width: 600px) {
+  svg {
+    background: none;
+    margin: -50px;
+    width: 300px;
+  }
+}
+.dumalo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#js {
+  animation: my-bar 13s linear infinite;
+  transform-origin: center;
+}
+
+@keyframes my-bar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#git {
+  animation: git-bar 13s linear infinite;
+  transform-origin: center;
+}
+
+@keyframes git-bar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#wordpress {
+  animation: wordpress-bar 13s linear infinite;
+  transform-origin: center;
+}
+
+@keyframes wordpress-bar {
+  from {
+    transform: rotate(85deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+#bootstrap {
+  animation: bootstrap-bar 13s linear infinite;
+  transform-origin: center;
+}
+
+@keyframes bootstrap-bar {
+  from {
+    transform: rotate(-200deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+#react {
+  animation: react-bar 13s linear infinite;
+  transform-origin: center;
+}
+
+@keyframes react-bar {
+  from {
+    transform: rotate(-45deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+#css {
+  animation: css-bar 13s linear infinite;
+  transform-origin: center;
+}
+
+@keyframes css-bar {
+  from {
+    transform: rotate(120deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+#html {
+  animation: html-bar 13s linear infinite;
+  transform-origin: center;
+}
+
+@keyframes html-bar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+.name {
+  position: relative;
+  text-align: center;
+}
+
+.my-name {
+  background-color: rgba(0, 0, 0, 0.66);
+  backdrop-filter: blur(20px);
+  position: absolute;
+  top: 0;
+  left: 50px;
+  color: #03989e;
+  background-color: transparent;
+  font-size: 20px;
+}
+.my-year {
+  background-color: rgba(0, 0, 0, 0.66);
+
+  backdrop-filter: blur(20px);
+  background-color: transparent;
+  position: absolute;
+  right: 200px;
+  bottom: 0;
+  color: #03989e;
+  font-size: 20px;
+}
+
+@media (max-width: 600px) {
+  .my-name {
+    backdrop-filter: blur(20px);
+    background-color: rgba(0, 0, 0, 0.66);
+    position: absolute;
+    top: 0;
+    left: 150px;
+    font-size:18px ;
+  }
+  .my-year {
+    position: absolute;
+    right: 200px;
+    bottom: 0;
+    backdrop-filter: blur(20px);
+    background-color: rgba(0, 0, 0, 0.66);
+    font-size:18px ;
+
+  }
+  .my-photo {
+    width: 100%;
+  }
+}
+.my-photo {
+  width: 300px;
+  border-radius: 200% 80%;
+}
+
