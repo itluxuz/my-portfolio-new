@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { NavLink, Link, Outlet } from "react-router-dom";
 import { BiMenuAltRight } from "react-icons/bi";
-
+import Logo from "../assets/logoo.png";
 export default function Header() {
   const [open, setOpen] = useState(false);
   return (
@@ -9,15 +9,16 @@ export default function Header() {
       <div className="container header ">
         <div>
           <NavLink to={"/"}>
-            <img className="logo" src="./logoo.png" />
+            <img className="logo" src={Logo} />
           </NavLink>
         </div>
-        <div className=" menu d-none d-md-flex ">
+        <div className=" menu d-none d-md-flex justify-content-end">
           <NavLink
             style={({ isActive }) => {
               return {
-                color: isActive ? "#ff6464" : "#03989E",
+                color: isActive ? "#000" : "#03989E",
                 borderColor: isActive ? "#ff6464" : "#03989E",
+                backgroundColor: isActive ? "#ff6464" : "transparent",
               };
             }}
             className=" list"
@@ -28,8 +29,9 @@ export default function Header() {
           <NavLink
             style={({ isActive }) => {
               return {
-                color: isActive ? "#ff6464" : "#03989E",
+                color: isActive ? "#000" : "#03989E",
                 borderColor: isActive ? "#ff6464" : "#03989E",
+                backgroundColor: isActive ? "#ff6464" : "transparent",
               };
             }}
             className=" list"
@@ -37,27 +39,28 @@ export default function Header() {
           >
             About
           </NavLink>
-          
+
           <NavLink
             style={({ isActive }) => {
               return {
-                color: isActive ? "#ff6464" : "#03989E",
+                color: isActive ? "#000" : "#03989E",
                 borderColor: isActive ? "#ff6464" : "#03989E",
+                backgroundColor: isActive ? "#ff6464" : "transparent",
               };
             }}
             className=" list"
             to={"/projekt"}
           >
-            Projekt
+            Project
           </NavLink>
         </div>
-        <div className="d-md-none">
+        <div className="d-md-none d-flex justify-content-end">
           <button className="btn button" onClick={() => setOpen(!open)}>
             <BiMenuAltRight />
           </button>
         </div>
         <div
-          className="headerMenu d-md-none"
+          className="headerMenu d-md-none  "
           style={{
             position: "absolute",
             top: 0,
@@ -67,8 +70,9 @@ export default function Header() {
           <NavLink
             style={({ isActive }) => {
               return {
-                color: isActive ? "#ff6464" : "#03989E",
+                color: isActive ? "#000" : "#03989E",
                 borderColor: isActive ? "#ff6464" : "#03989E",
+                backgroundColor: isActive ? "#ff6464" : "transparent",
               };
             }}
             className=" list"
@@ -79,8 +83,9 @@ export default function Header() {
           <NavLink
             style={({ isActive }) => {
               return {
-                color: isActive ? "#ff6464" : "#03989E",
+                color: isActive ? "#000" : "#03989E",
                 borderColor: isActive ? "#ff6464" : "#03989E",
+                backgroundColor: isActive ? "#ff6464" : "transparent",
               };
             }}
             className=" list"
@@ -88,18 +93,19 @@ export default function Header() {
           >
             About
           </NavLink>
-          
+
           <NavLink
             style={({ isActive }) => {
               return {
-                color: isActive ? "#ff6464" : "#03989E",
+                color: isActive ? "#000" : "#03989E",
                 borderColor: isActive ? "#ff6464" : "#03989E",
+                backgroundColor: isActive ? "#ff6464" : "transparent",
               };
             }}
             className=" list"
             to={"/projekt"}
           >
-            Projekt
+            Project
           </NavLink>
         </div>
       </div>

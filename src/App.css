@@ -50,6 +50,7 @@ h2 {
   font-size: 40px;
 }
 .headerMenu {
+  z-index: 100000;
   backdrop-filter: blur(15px);
 
   display: flex;
@@ -62,8 +63,80 @@ h2 {
   height: 30vh;
   background-color: rgba(204, 204, 204, 0.084);
 }
+.jobs{
+  display: block;
+  
+  text-align: center;
+  margin: 0 auto;
+}
+.text-jobs{
+  margin: 0 auto;
+
+}
+.developer{
+  margin: 0 auto;
+   display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+.special-text{
+  color: #03989e;
+}
+.line{
+  width: 1px;
+  background-color: rgba(255, 255, 255, 0.626);
+  height: auto;
+}
+.smm-manager{
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+.jobs-texts{
+  color: #fff;
+}
+.footer-icons{
+  font-size: 10px;
+  text-decoration: none;
+  color:#03989e;
+  display: flex;
+  align-items: center  ;
+  gap: 5px;
+
+}
+.footer-icons:hover{
+  color: #fff;
+  transition: all 0.1s;
+}
+.icon-footer{
+  font-size: 15px;
+}
+.motto{
+  color: #fff;
+}
+.footer-section{
+  border-top: 1px solid #03989e ;
+  border-radius:  15px 15px 0% 0%   ;
+  margin-top: 20px;
+}
+
 
 @media only screen and (max-width: 600px) {
+  .media-text{
+    font-size: 15px;
+  }
+
+
+
+
+
+
+
+
+
+
+
   svg {
     background: none;
     margin: -50px;
