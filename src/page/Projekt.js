@@ -2,6 +2,6 @@ import React from 'react'
 
 export default function Projekt() {
   return (
-    <div>Projekt</div>
+    <div className='main' >Projekt</div>
   )
 }

@@ -2,6 +2,7 @@
   background-color: black;
   transition: all 0.3s;
 }
+
 .logo {
   width: 100px;
   cursor: pointer;
@@ -40,6 +41,8 @@ h2 {
   width: 100px;
 }
 .header {
+  
+  z-index: 10000000000000000000000000000000000;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -97,45 +100,50 @@ h2 {
   color: #fff;
 }
 .footer-icons{
-  font-size: 10px;
+  font-size: 15px;
   text-decoration: none;
   color:#03989e;
   display: flex;
-  align-items: center  ;
+  align-items:center;
+  justify-content: center;
   gap: 5px;
 
 }
 .footer-icons:hover{
   color: #fff;
-  transition: all 0.1s;
+  transition: all 1s;
+
 }
 .icon-footer{
-  font-size: 15px;
+  font-size: 25px;
 }
+
 .motto{
   color: #fff;
 }
 .footer-section{
+ 
   border-top: 1px solid #03989e ;
   border-radius:  15px 15px 0% 0%   ;
   margin-top: 20px;
+
 }
 
 
 @media only screen and (max-width: 600px) {
+  .motto{
+    font-size: 20px;
+  }
   .media-text{
     font-size: 15px;
   }
+.footer-media{
+  display: flex;
+}
 
-
-
-
-
-
-
-
-
-
+.text-footer{
+  font-size: 25px;
+}
 
   svg {
     background: none;
@@ -148,6 +156,15 @@ h2 {
   justify-content: center;
   align-items: center;
 }
+
+
+
+
+
+
+
+
+
 
 #js {
   animation: my-bar 13s linear infinite;

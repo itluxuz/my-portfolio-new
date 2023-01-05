@@ -4,9 +4,11 @@ import { BiMenuAltRight } from "react-icons/bi";
 import Logo from "../assets/logoo.png";
 export default function Header() {
   const [open, setOpen] = useState(false);
-  return (
+  return  (
     <>
       <div className="container header ">
+       
+
         <div>
           <NavLink to={"/"}>
             <img className="logo" src={Logo} />

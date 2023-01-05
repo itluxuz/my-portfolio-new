@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Home() {
   return (
-    <div className="dumalo">
+    <div className="dumalo main ">
       <svg
       className="svgg"
         width="539"

@@ -2,7 +2,7 @@ import React from "react";
 import MyPhoto from "../assets/me.png";
 export default function About() {
   return (
-    <div>
+    <div className="main" >
       <div className="name container">
         <h2 className="my-name">Latifjonov Abdulaziz Azizovich </h2>
         <img className=" my-photo img-fluid" src={MyPhoto}></img>
